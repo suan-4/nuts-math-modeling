@@ -2,7 +2,7 @@
 name: mathematical-modeling-paper
 description: Write, revise and audit Chinese mathematical-modeling competition papers with traceable derivations, natural academic prose, native Word equations, reproducible figures and tables, template-based layout and verified supporting files. Use for modeling papers and their code/result consistency, not unrelated academic writing.
 metadata:
-  version: "2.0.0"
+  version: "2.0.1"
 ---
 
 # 数学建模论文：从题目到可复现交付

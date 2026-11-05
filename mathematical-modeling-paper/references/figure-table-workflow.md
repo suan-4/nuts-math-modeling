@@ -134,7 +134,7 @@ Every important figure or table needs:
 1. a lead-in explaining why the evidence is needed;
 2. a self-contained caption/title;
 3. a result sentence extracting a value, trend, threshold, exception, or relation;
-4. a decision sentence stating what model, parameter, constraint, or next step follows.
+4. when it changes a model, parameter, constraint or next step, explain that consequence without adding a redundant sentence to every caption or paragraph.
 
 For geometry use `define symbols -> diagram -> identify relation -> derive formula`. For diagnostics use `state condition -> diagnostic evidence -> quantitative result -> modeling consequence`.
 

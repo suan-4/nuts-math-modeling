@@ -4,11 +4,9 @@ Use this workflow when code, data, computed results, figures, tables, or manuscr
 
 ## Required discipline
 
-**REQUIRED SUB-SKILL:** Use `superpowers:systematic-debugging` for unexpected behavior or conflicting results.
+For conflicting results, reproduce the symptom and trace its root cause before patching. Add a meaningful regression check when it can distinguish the defect from correct behavior, then run fresh verification before claiming completion.
 
-**REQUIRED SUB-SKILL:** Use `superpowers:test-driven-development` before changing code for a confirmed defect.
-
-**REQUIRED SUB-SKILL:** Use `superpowers:verification-before-completion` before reporting a repair as complete.
+If installed, `superpowers:systematic-debugging`, `superpowers:test-driven-development` and `superpowers:verification-before-completion` can help apply this discipline. They are optional integrations; follow the complete workflow below when they are unavailable. Do not ask users to install unrelated skills just to use this package.
 
 Reproduce before editing. Do not patch a suspicious line merely because it looks unusual.
 
