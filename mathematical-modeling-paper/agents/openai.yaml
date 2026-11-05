@@ -1,4 +1,0 @@
-interface:
-  display_name: "数学建模论文工作流"
-  short_description: "从题意与推导到中文话术、公式图表、模板排版和支撑材料的一致性检查"
-  default_prompt: "使用 $mathematical-modeling-paper，按指定模板检查或精修这篇数模论文，保持模型、公式、图表、代码和结果文件一致，并保留我锁定的内容。"

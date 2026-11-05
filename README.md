@@ -1,8 +1,10 @@
-# 数学建模论文工作流 Skill
+# Nuts-MathModeling｜数学建模论文工作流
 
 把题意、模型、代码、结果、图表、论文和支撑材料连起来的一套可复用工作规则。适用于中文数学建模竞赛论文的写作、精修、排版与提交检查。
 
-本次2.0版根据一次获广东省一等奖的圆柱药材烘干项目及完整改稿经历整理。奖项为作者自述，不代表比赛官方推荐，不保证使用本skill可以获奖。仓库不包含参赛论文、题目附件或第三方模板原件。
+本次2.1版根据一次获广东省一等奖的圆柱药材烘干项目及完整改稿经历整理。奖项为作者自述，不代表比赛官方推荐，不保证使用本skill可以获奖。仓库不包含参赛论文、题目附件或第三方模板原件。
+
+品牌名：**Nuts-MathModeling**。安装目录与调用名：`nuts-math-modeling`。[运行原理与介绍口径](docs/how-it-works.md)。
 
 ## 这次整理了什么
 
@@ -24,17 +26,17 @@
 
 ## 安装
 
-点击仓库的 **Code → Download ZIP**，解压后找到里面的`mathematical-modeling-paper`文件夹，将其复制到：
+点击仓库的 **Code → Download ZIP**，解压后找到里面的`nuts-math-modeling`文件夹，将其复制到：
 
 ```text
-Codex:        ~/.codex/skills/mathematical-modeling-paper
-Claude Code: ~/.claude/skills/mathematical-modeling-paper
+Codex:        ~/.codex/skills/nuts-math-modeling
+Claude Code: ~/.claude/skills/nuts-math-modeling
 ```
 
 若目标已经安装旧版，先备份旧文件夹。这里的`~`表示当前用户目录。重新开启会话后使用：
 
 ```text
-使用 $mathematical-modeling-paper，检查这篇论文的建模逻辑、公式分组、
+使用 $nuts-math-modeling，检查这篇论文的建模逻辑、公式分组、
 图表前后解释及代码结果一致性。只报告问题，先不要改动文件。
 ```
 
@@ -73,13 +75,13 @@ Claude Code: ~/.claude/skills/mathematical-modeling-paper
 
 ## 文件导航
 
-- [Skill入口](mathematical-modeling-paper/SKILL.md)
-- [公式与Word排版](mathematical-modeling-paper/references/equations-word.md)
-- [中文话术与过渡范例](mathematical-modeling-paper/references/chinese-writing-playbook.md)
-- [指定模板参数及冲突处理](mathematical-modeling-paper/references/template-profile.md)
-- [作图、表格与流程图技巧](mathematical-modeling-paper/references/figure-table-workflow.md)
-- [省一项目复盘](mathematical-modeling-paper/references/competition-retrospective.md)
-- [终稿、参考文献、附录与ZIP](mathematical-modeling-paper/references/final-delivery.md)
+- [Skill入口](nuts-math-modeling/SKILL.md)
+- [公式与Word排版](nuts-math-modeling/references/equations-word.md)
+- [中文话术与过渡范例](nuts-math-modeling/references/chinese-writing-playbook.md)
+- [指定模板参数及冲突处理](nuts-math-modeling/references/template-profile.md)
+- [作图、表格与流程图技巧](nuts-math-modeling/references/figure-table-workflow.md)
+- [省一项目复盘](nuts-math-modeling/references/competition-retrospective.md)
+- [终稿、参考文献、附录与ZIP](nuts-math-modeling/references/final-delivery.md)
 
 附带的13页模板配置是历史项目配置，不是普遍比赛规定。使用前提供自己的模板、赛题和当届规则，特别是AI使用说明与提交命名要求。
 
@@ -88,10 +90,10 @@ Claude Code: ~/.claude/skills/mathematical-modeling-paper
 只需Python 3.10或更高版本，无第三方依赖。脚本只做有限静态检查，不导入或执行压缩包中的程序：
 
 ```bash
-python mathematical-modeling-paper/scripts/audit_text.py paper.txt --format text
-python mathematical-modeling-paper/scripts/audit_final_surface.py paper.txt --format text
-python mathematical-modeling-paper/scripts/audit_support_package.py supporting.zip --compile-python --required result1.xlsx --required result2.xlsx
-python -m unittest discover -s mathematical-modeling-paper/scripts -p test_audits.py -v
+python nuts-math-modeling/scripts/audit_text.py paper.txt --format text
+python nuts-math-modeling/scripts/audit_final_surface.py paper.txt --format text
+python nuts-math-modeling/scripts/audit_support_package.py supporting.zip --compile-python --required result1.xlsx --required result2.xlsx
+python -m unittest discover -s nuts-math-modeling/scripts -p test_audits.py -v
 python tools/validate_release.py
 ```
 

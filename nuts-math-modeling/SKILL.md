@@ -1,11 +1,11 @@
 ---
-name: mathematical-modeling-paper
+name: nuts-math-modeling
 description: Write, revise and audit Chinese mathematical-modeling competition papers with traceable derivations, natural academic prose, native Word equations, reproducible figures and tables, template-based layout and verified supporting files. Use for modeling papers and their code/result consistency, not unrelated academic writing.
 metadata:
-  version: "2.0.1"
+  version: "2.1.0"
 ---
 
-# 数学建模论文：从题目到可复现交付
+# Nuts-MathModeling｜数学建模论文工作流
 
 ## 先守住四条边界
 

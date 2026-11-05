@@ -9,4 +9,4 @@ jobs:
         with:
           python-version: '3.11'
       - run: python tools/validate_release.py
-      - run: python -m unittest discover -s mathematical-modeling-paper/scripts -p test_audits.py -v
+      - run: python -m unittest discover -s nuts-math-modeling/scripts -p test_audits.py -v
